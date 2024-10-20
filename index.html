@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multistep form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="Form1">
+            <h3>CREATE ACCOUNT</h3>
+            <input type="text" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="text" placeholder="Confirm Password" required>
+            <div class="btn-box">
+                <button type="button" id="Next1">Next</button>
+            </div>
+        </form>
+        <form id="Form2">
+            <h3>PERSONAL INFO</h3>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+            <input type="text" placeholder="Mobile no." required>
+            <div class="btn-box">
+                <button type="button" id="Back1">Back</button>
+                <button type="button" id="Next2">Next</button>
+            </div>
+        </form>
+        <form id="Form3">
+            <h3>Social Links</h3>
+            <input type="text" placeholder="Medium">
+            <input type="text" placeholder="Github">
+            <input type="text" placeholder="Linkedin">
+            <div class="btn-box">
+                <button type="button" id="Back2">Back</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <form id="Form4">
+            <h3>Upload Documents</h3>
+            <input type="file" id="fileInput" accept=".jpg,.png,.pdf" required>
+            <div class="btn-box">
+                <button type="button" id="Back3">Back</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        
+        <div class="step-row">
+            <div id="progress"></div>
+            <div class="step-column"><small>Step 1</small></div>
+            <div class="step-column"><small>Step 2</small></div>
+            <div class="step-column"><small>Step 3</small></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
